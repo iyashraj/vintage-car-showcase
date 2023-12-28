@@ -1,6 +1,52 @@
-$primary-color: #007bff;
+@import url("https://fonts.googleapis.com/css2?family=Asul&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap");
+
+$primary-color: #23262a;
+$secondary-color: #08100c;
+$font-stack: "Montserrat", sans-serif;
 
 body {
   background-color: $primary-color;
   color: white;
+  font-family: $font-stack;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 25px;
+  -webkit-backdrop-filter: blur(8px); /* Safari 9+ */
+  backdrop-filter: blur(8px); /* Chrome and Opera */
+  box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+}
+.nav-right {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  ul {
+    display: flex;
+    gap: 28px;
+  }
+
+  li {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+  };
+  li:hover{
+    scale: 1.2;
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+  }
+  button {
+    min-width: 150px;
+    padding: 2% 0;
+  }
+}
+
+.logo_img {
+  height: 10%;
+  width: 10%;
 }
